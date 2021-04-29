@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void print(int**edge,int n, int sv,bool*visited){
+void printDFS(int**edge,int n, int sv,bool*visited){
     cout<<sv<<endl;
     visited[sv]=true;
     for(int i=0;i<n;i++){
@@ -35,6 +35,6 @@ int main(){
     for(int i=0;i<n;i++){
         visited[i]=false;
     }
-    print(edge,n,0,visited);
+    printDFS(edge,n,0,visited);
     return 0;
 }
